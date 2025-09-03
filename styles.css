@@ -15,7 +15,7 @@
 
 body {
   display: grid;
-  grid-template: 180px 1fr / 300px 1fr;
+  grid-template: 180px 1fr / 320px 1fr;
   grid-template-areas: 
     "sidebar header"
     "sidebar content";
