@@ -33,6 +33,56 @@ header {
   background-color: #0091D0;
 }
 
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 1rem 0 2.5rem 1rem;
+}
+
+.dashboard-icon {
+  fill: white;
+  width: 3rem;
+}
+
+.dashboard-label {
+  font-size: 1.75rem;
+  color: white;
+}
+
+.sidebar nav:first-of-type {
+  margin-bottom: 3.5rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  background-color: #0091D0;
+  transition: background-color 0.1s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-link:active {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav-icon {
+  fill: white;
+  width: 1.5rem;
+}
+
+.nav-label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+}
+
 .content {
   grid-area: content;
   background-color: #E1E7EF;
