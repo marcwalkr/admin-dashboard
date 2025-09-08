@@ -24,9 +24,98 @@ body {
 }
 
 header {
+  display: grid;
+  grid-template-columns: minmax(15rem, 70rem) auto;
+  align-items: center;
+  gap: 1rem;
   grid-area: header;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1;
+  padding: 1rem 3rem;
+}
+
+.search-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+
+.icon-button {
+  width: 1.75rem;
+  border: none;
+  background-color: white;
+}
+
+input[type="search"] {
+  min-width: 0;
+  font-size: 1.25rem;
+  padding: 0.2rem 1rem;
+  border-style: solid;
+  border-color: #E1E7EF;
+  background-color: #E1E7EF;
+  border-radius: 1rem;
+}
+
+.user-controls {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-icon-small {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.user-greeting {
+  display: grid;
+  grid-template-areas:
+    "profile-pic greeting"
+    "profile-pic user-handle";
+  gap: 0.5rem 1rem;
+  justify-content: start;
+}
+
+.profile-icon-large {
+  grid-area: profile-pic;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.greeting {
+  grid-area: greeting;
+  align-self: end;
+  font-weight: bold;
+}
+
+.user-name-handle {
+  grid-area: user-handle;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.dashboard-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(6rem, 1fr));
+  gap: 1.5rem;
+}
+
+.dashboard-actions button {
+  padding: 0.6rem;
+  font-size: inherit;
+  font-weight: bold;
+  color: white;
+  border-style: solid;
+  border-color: #0091D0;
+  border-radius: 2rem;
+  background-color: #0091D0;
 }
 
 .sidebar {
