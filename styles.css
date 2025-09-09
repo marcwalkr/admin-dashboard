@@ -176,6 +176,50 @@ input[type="search"] {
 }
 
 .content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  column-gap: 2rem;
   grid-area: content;
   background-color: #E1E7EF;
+  padding: 2rem 1.5rem;
+}
+
+.content-section {
+  display: grid;
+  grid-template-rows: min-content auto;
+  row-gap: 0.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-auto-rows: 14rem;
+  justify-content: start;
+  gap: 2rem;
+}
+
+.project-card {
+  background: white;
+  border-left: 0.5rem solid #F4A300;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.side-column {
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 2rem;
+}
+
+.content-box {
+  width: 18rem;
+  height: 20rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
 }
