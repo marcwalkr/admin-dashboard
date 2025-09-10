@@ -189,6 +189,7 @@ h3 {
 }
 
 a {
+  color: black;
   text-decoration: none;
 }
 
@@ -234,13 +235,13 @@ p {
   background: white;
   border-radius: 0.5rem;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
 }
 
 .announcements {
   display: grid;
   grid-auto-rows: min-content;
   row-gap: 1rem;
+  padding: 2rem;
 }
 
 .announcement {
@@ -261,6 +262,35 @@ p {
 
 .announcement p {
   font-size: 0.8rem;
+}
+
+.trending {
+  display: grid;
+  row-gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.trending-item {
+  display: grid;
+  grid-template-areas:
+    "profile-pic handle"
+    "profile-pic project";
+  gap: 0.2rem 1rem;
+  justify-content: start;
+  font-size: 0.9rem;
+}
+
+.trending-item img {
+  grid-area: profile-pic;
+}
+
+.trending-item .handle {
+  grid-area: handle;
+  align-self: end;
+}
+
+.trending-item .project {
+  grid-area: project;
 }
 
 .icon-button {
