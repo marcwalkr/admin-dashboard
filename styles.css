@@ -188,6 +188,14 @@ h3 {
   color: black;
 }
 
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #646464;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -204,12 +212,7 @@ h3 {
   border-left: 0.5rem solid #F4A300;
   border-radius: 0.5rem;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
   padding: 2rem 1rem;
-}
-
-.project-card p {
-  color: #646464;
 }
 
 .project-actions {
@@ -228,10 +231,36 @@ h3 {
 
 .content-box {
   width: 18rem;
-  height: 20rem;
   background: white;
   border-radius: 0.5rem;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.announcements {
+  display: grid;
+  grid-auto-rows: min-content;
+  row-gap: 1rem;
+}
+
+.announcement {
+  display: grid;
+  row-gap: 0.2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #C8C8C8;
+}
+
+.announcement:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.announcement h3 {
+  font-size: 0.9rem;
+}
+
+.announcement p {
+  font-size: 0.8rem;
 }
 
 .icon-button {
