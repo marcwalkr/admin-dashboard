@@ -40,12 +40,6 @@ header {
   gap: 1rem;
 }
 
-.icon-button {
-  width: 1.75rem;
-  border: none;
-  background-color: white;
-}
-
 input[type="search"] {
   min-width: 0;
   font-size: 1.25rem;
@@ -62,11 +56,6 @@ input[type="search"] {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-}
-
-.profile-icon-small {
-  width: 3rem;
-  border-radius: 50%;
 }
 
 .user-name {
@@ -195,6 +184,10 @@ h2 {
   font-size: 1.3rem;
 }
 
+h3 {
+  color: black;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -204,10 +197,27 @@ h2 {
 }
 
 .project-card {
+  display: grid;
+  grid-template-rows: min-content auto;
+  row-gap: 0.5rem;
   background: white;
   border-left: 0.5rem solid #F4A300;
   border-radius: 0.5rem;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  padding: 2rem 1rem;
+}
+
+.project-card p {
+  color: #646464;
+}
+
+.project-actions {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  column-gap: 1.5rem;
+  justify-self: end;
+  align-self: end;
 }
 
 .side-column {
@@ -222,4 +232,19 @@ h2 {
   background: white;
   border-radius: 0.5rem;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon-button {
+  width: 1.75rem;
+  border: none;
+  background-color: white;
+}
+
+.profile-icon-small {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.gray-fill {
+  fill: rgb(60, 60, 60);
 }
